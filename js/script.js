@@ -19,7 +19,7 @@ $(function () {
 });
 $(function () {
     $(document).mouseup(function (e){
-        var div = $(".dropdown-menu" || ".little" || ".big" );
+        var div = $(".dropdown-menu");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
             div.parent().removeClass('open');
@@ -28,14 +28,22 @@ $(function () {
 });
 $(function () {
     $(document).mouseup(function (e){
-        var div = $(".little" || ".big" );
+        var div = $(".little");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
             div.parent().removeClass('open');
         }
     });
 });
-
+$(function () {
+    $(document).mouseup(function (e){
+        var div = $(".big");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            div.parent().removeClass('open');
+        }
+    });
+});
 
 $(function () {
     $('div.filter a').click(function () {

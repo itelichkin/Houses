@@ -935,6 +935,9 @@ p.sort_by {
         display: inline-block;
         float: none;
     }
+    #logo div.upper ul.little, #logo div.upper ul.big {
+        width: 330px;
+    }
 
     .choice {
         left: -19px;
