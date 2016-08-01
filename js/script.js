@@ -18,6 +18,17 @@ $(function () {
     });
 });
 $(function () {
+    $(document).mouseup(function (e){
+        var div = $(".dropdown-menu");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            div.parent().removeClass('open');
+        }
+    });
+});
+
+
+$(function () {
     $('div.filter a').click(function () {
         $('div.more_filters').toggleClass("offline");
         $('div.less_filters').toggleClass("offline");

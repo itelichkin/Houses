@@ -163,7 +163,7 @@ input[type="checkbox"]:checked + label span {
 }
 
 .beds, .baths {
-    height: 153px;
+    height: 160px;
 }
 
 .choice ul {
@@ -175,21 +175,28 @@ input[type="checkbox"]:checked + label span {
 }
 
 .beds > ul, .baths > ul {
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 #logo .choice li {
-    padding: 3px 8px;
+    padding: 0 8px;
     cursor: pointer;
     color: #838c95;
     width: 100%;
     text-align: left;
+}
+#logo .choice li input[type=radio]:checked + label {
+       background: #e5f8fe;
+    color: black;
+
 }
 
 .choice li label {
     color: #838c95;
     font-weight: inherit;
     cursor: pointer;
+    width: 100%;
+    padding: 5px;
 }
 
 .choice li:hover {
@@ -581,6 +588,7 @@ p.sort_by {
     margin-bottom: 0;
     border: 1px solid #9299a3;
     margin-top: -14px;
+    z-index: 0;
 }
 #total div.update label:hover, #total div.update label.active{
      background: #cbf0f9;
