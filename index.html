@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+<section id="main_menu">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="col-md-7 menu">
+                <nav class="navbar">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="btn btn-default navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#menu" aria-expanded="false">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav menu navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Buyers</a></li>
+                            <li><a href="#">Sellers</a></li>
+                            <li><a href="#">Rentals</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <div class="col-md-5 other_menu">
+                <div class="row">
+                    <div class="what col-xs-4 col-md-6">
+                        <p>What Your Home Worth?</p>
+                    </div>
+                    <div class="favorites col-xs-4 col-md-4">
+                        <p><span class="glyphicon glyphicon-heart-empty"></span>Favorites <sup class="amount">0</sup>
+                        </p>
+                    </div>
+                    <div class="sign_in col-xs-4 col-md-2">
+                        <p>Sign in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="logo">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="logo">
+                <p class="text-center">LOGO PLACE</p>
+            </div>
+            <div class="search">
+                <div class="main_search">
+                    <nav>
+                        <div class="container-fluid">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    <input type="text" class="form-control"
+                                           placeholder="Enter any Area, ZIP, Neghborhood, Adress, etc">
+                                </div>
+                            </form>
+                            <ul class="navigation">
+                                <li class="dropdown">
+                                    <a href="#" class="click_me">Type<span class="glyphicon glyphicon-menu-down"></span></a>
+                                    <div class="dropdown-menu choice">
+                                        <ul>
+                                            <li>
+                                                <input id="Home(Single Family)" type="checkbox" name="last"/>
+                                                <label for="Home(Single Family)"><span></span>Home(Single
+                                                    Family)</label>
+                                            </li>
+                                            <li>
+                                                <input id="Condos" type="checkbox" name="last"
+                                                       class="CheckBoxLabelClass"/>
+                                                <label for="Condos"><span></span>Condos</label>
+                                            </li>
+                                            <li>
+                                                <input id="Townhouses" type="checkbox" name="last"/>
+                                                <label for="Townhouses"><span></span>Townhouses</label>
+                                            </li>
+                                            <li>
+                                                <input id="Land & Lots" type="checkbox" name="last"/>
+                                                <label for="Land & Lots"><span></span>Land & Lots</label>
+                                            </li>
+                                            <li>
+                                                <input id="Manufactured Home" type="checkbox" name="last"/>
+                                                <label for="Manufactured Home"><span></span>Manufactured Home</label>
+                                            </li>
+                                            <li>
+                                                <input id="Multi-Family" type="checkbox" name="last"/>
+                                                <label for="Multi-Family"><span></span>Multi-Family</label>
+                                            </li>
+                                            <li>
+                                                <input id="Comercial" type="checkbox" name="last"/>
+                                                <label for="Comercial"><span></span>Comercial</label>
+                                            </li>
+                                            <li>
+                                                <input id="Rentals" type="checkbox" name="last"/>
+                                                <label for="Rentals"><span></span>Rentals</label>
+                                            </li>
+                                            <li>
+                                                <input id="Shared Interest" type="checkbox" name="last"/>
+                                                <label for="Shared Interest"><span></span>Shared Interest</label>
+                                            </li>
+                                            <li>
+                                                <input id="lorem_1" type="checkbox" name="last"/>
+                                                <label for="lorem_1"><span></span>Land & Lots</label>
+                                            </li>
+                                            <li>
+                                                <input id="lorem_2" type="checkbox" name="last"/>
+                                                <label for="lorem_2"><span></span>Manufactured Home</label>
+                                            </li>
+                                            <li>
+                                                <input id="lorem_3" type="checkbox" name="last"/>
+                                                <label for="lorem_3"><span></span>Multi-Family</label>
+                                            </li>
+                                            <li>
+                                                <input id="lorem_4" type="checkbox" name="last"/>
+                                                <label for="lorem_4"><span></span>Comercial</label>
+                                            </li>
+                                            <li>
+                                                <input id="lorem_5" type="checkbox" name="last"/>
+                                                <label for="lorem_5"><span></span>Rentals</label>
+                                            </li>
+                                            <li>
+                                                <input id="lorem_6" type="checkbox" name="last"/>
+                                                <label for="lorem_6"><span></span>Shared Interest</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="click_me" role="button">Price<span
+                                            class="glyphicon glyphicon-menu-down"></span></a>
+                                    <div class="dropdown-menu choice">
+                                        <ul>
+                                            <li class="random_price"><input type="text" class="form-control"
+                                                                            placeholder="from">
+                                            </li>
+                                            <li class="random_price"><input type="text" class="form-control"
+                                                                            placeholder="to">
+                                            </li>
+                                            <li>&#36; 0</li>
+                                            <li>&#36; 50,000</li>
+                                            <li>&#36; 75,000</li>
+                                            <li>&#36; 100,000</li>
+                                            <li>&#36; 150,000</li>
+                                            <li>&#36; 200,000</li>
+                                            <li>&#36; 250,000</li>
+                                            <li>&#36; 300,000</li>
+                                            <li>&#36; 350,000</li>
+                                            <li>&#36; 400,000</li>
+                                            <li>&#36; 450,000</li>
+                                            <li>&#36; 500,000</li>
+                                            <li>&#36; 550,000</li>
+                                            <li>&#36; 600,000</li>
+                                            <li>&#36; 650,000</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="click_me " role="button">Beds<span
+                                            class="glyphicon glyphicon-menu-down"></span></a>
+                                    <div class="dropdown-menu choice beds">
+                                        <ul>
+                                            <li>
+                                                <input id="1_bed" type="checkbox" name="last"/>
+                                                <label for="1_bed"><span></span>1 bed</label>
+                                            </li>
+                                            <li>
+                                                <input id="2_beds" type="checkbox" name="last"/>
+                                                <label for="2_beds"><span></span>2 beds</label>
+                                            </li>
+                                            <li>
+                                                <input id="3_beds" type="checkbox" name="last"/>
+                                                <label for="3_beds"><span></span>3 beds</label>
+                                            </li>
+                                            <li>
+                                                <input id="4_beds" type="checkbox" name="last"/>
+                                                <label for="4_beds"><span></span>4 beds</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="click_me" role="button">Baths<span
+                                            class="glyphicon glyphicon-menu-down"></span></a>
+                                    <div class="dropdown-menu choice baths">
+                                        <ul>
+                                            <li>
+                                                <input id="1_baths" type="checkbox" name="last"/>
+                                                <label for="1_baths"><span></span>1 baths</label>
+                                            </li>
+                                            <li>
+                                                <input id="2_baths" type="checkbox" name="last"/>
+                                                <label for="2_baths"><span></span>2 baths</label>
+                                            </li>
+                                            <li>
+                                                <input id="3_baths" type="checkbox" name="last"/>
+                                                <label for="3_baths"><span></span>3 baths</label>
+                                            </li>
+                                            <li>
+                                                <input id="4_baths" type="checkbox" name="last"/>
+                                                <label for="4_baths"><span></span>4 baths</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="more upper">
+                                    <a href="#" class="click_me" role="button">More<span
+                                            class="glyphicon glyphicon-menu-down"></span></a>
+                                    <div class="dropdown-menu">
+                                        <div class="more_filters  container-fluid">
+                                            <div class="container">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Square Footage</h4>
+                                                    <form class="form-inline">
+                                                        <div class="form-group col-xs-6">
+                                                            <span
+                                                                    class="label"></span><input type="text"
+                                                                                                class="form-control"
+                                                                                                id="square_footage_from"
+                                                                                                placeholder="from">
+                                                        </div>
+                                                        <div class="form-group col-xs-6">
+                                                            <span
+                                                                    class="label"></span><input type="text"
+                                                                                                class="form-control"
+                                                                                                id="square_footage_to"
+                                                                                                placeholder="to">
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Year Built</h4>
+                                                    <div class="form-group col-xs-6 dropdown upper">
+                                                        <input type="text"
+                                                               class="form-control click_me "
+                                                               role="button" id="year_built_from"
+                                                               placeholder="from"><span
+                                                            class="glyphicon glyphicon-menu-down"></span>
+                                                        <ul class="dropdown-menu little">
+                                                            <li>
+                                                                <label><span></span>2016</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2015</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2014</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2013</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2012</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2011</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2010</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2009</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2008</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2007</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2006</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form-group dropdown upper col-xs-6">
+                                                        <input type="text"
+                                                               class="form-control click_me "
+                                                               role="button" id="year_built_to"
+                                                               placeholder="from"><span
+                                                            class="glyphicon glyphicon-menu-down"></span>
+                                                        <ul class="dropdown-menu little">
+                                                            <li>
+                                                                <label><span></span>2016</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2015</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2014</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2013</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2012</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2011</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2010</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2009</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2008</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2007</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2006</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Acres</h4>
+                                                    <form class="form-inline">
+                                                        <div class="form-group col-xs-6">
+                                                            <span
+                                                                    class="label"></span>
+                                                            <input type="text"
+                                                                   class="form-control"
+                                                                   id="acres_from"
+                                                                   placeholder="from">
+                                                        </div>
+                                                        <div class="form-group col-xs-6">
+                                                            <span
+                                                                    class="label">
+                                                            </span><input type="text"
+                                                                          class="form-control"
+                                                                          id="acres_to"
+                                                                          placeholder="to">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Garage Spaces</h4>
+                                                    <form class="form-inline">
+                                                        <div class="form-group col-xs-6">
+                                                            <span
+                                                                    class="label"></span>
+                                                            <input type="text"
+                                                                   class="form-control"
+                                                                   id="garage_spaces_from"
+                                                                   placeholder="from">
+                                                        </div>
+                                                        <div class="form-group col-xs-6">
+                                                            <span
+                                                                    class="label"></span>
+                                                            <input type="text"
+                                                                   class="form-control"
+                                                                   id="garage_spaces_to"
+                                                                   placeholder="to">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Stories</h4>
+                                                    <div class="form-group col-xs-6 dropdown upper">
+                                                        <input type="text"
+                                                               class="form-control click_me "
+                                                               role="button" id="stories_from"
+                                                               placeholder="from"><span
+                                                            class="glyphicon glyphicon-menu-down"></span>
+                                                        <ul class="dropdown-menu little">
+                                                            <li>
+                                                                <label><span></span>2016</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2015</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2014</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2013</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2012</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2011</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2010</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2009</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2008</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2007</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2006</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="form-group col-xs-6 dropdown upper">
+                                                        <input type="text"
+                                                               class="form-control click_me "
+                                                               role="button" id="stories_to"
+                                                               placeholder="to"><span
+                                                            class="glyphicon glyphicon-menu-down"></span>
+                                                        <ul class="dropdown-menu little">
+                                                            <li>
+                                                                <label><span></span>2016</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2015</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2014</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2013</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2012</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2011</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2010</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2009</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2008</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2007</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2006</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Price Reduce</h4>
+                                                    <div class="form-group col-sm-12 dropdown upper">
+                                                        <input type="text"
+                                                               class="form-control click_me "
+                                                               role="button" id="price_reduce"
+                                                               placeholder="from"><span
+                                                            class="glyphicon glyphicon-menu-down"></span>
+                                                        <ul class="dropdown-menu big">
+                                                            <li>
+                                                                <label><span></span>2016</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2015</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2014</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2013</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2012</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2011</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2010</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2009</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2008</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2007</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2006</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="text-left">Show</h4>
+                                                    <div class="form-group col-sm-12 dropdown upper">
+                                                        <input type="text"
+                                                               class="form-control click_me "
+                                                               role="button" id="Show"
+                                                               placeholder="from"><span
+                                                            class="glyphicon glyphicon-menu-down"></span>
+                                                        <ul class="dropdown-menu big">
+                                                            <li>
+                                                                <label><span></span>2016</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2015</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2014</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2013</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2012</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2011</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2010</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2009</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2008</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2007</label>
+                                                            </li>
+                                                            <li>
+                                                                <label><span></span>2006</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-lg-6 filter">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="row">
+                                                                <div class="col-xs-6">
+                                                                    <span></span><input id="has_photo"
+                                                                                        type="checkbox"
+                                                                                        name="last"/>
+                                                                    <label for="has_photo"><span></span>Has
+                                                                        Photos</label>
+                                                                </div>
+                                                                <div class="col-xs-6 click_me">
+                                                                    <span></span><input id="open_house"
+                                                                                        type="checkbox"
+                                                                                        name="last"/>
+                                                                    <label for="open_house"><span></span>Open
+                                                                        House</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row">
+                                                                <div class="col-xs-6">
+                                                                    <button type="button"
+                                                                            class="btn btn-default navbar-btn load_more center-block">
+                                                                        Show results
+                                                                    </button>
+                                                                </div>
+                                                                <div class="col-xs-6 clear_search">
+                                                                    <a href="#">Clear filters</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter">
+                                                    <a class="more_filters">Show more filters</a>
+                                                </div>
+                                            </div>
+                                            <div class="shadow">
+                                            </div>
+                                        </div>
+                                        <div class="less_filters offline container-fluid">
+                                            <div class="container">
+                                                <div class="col-xs-12 special_scroll">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h4>Community Features</h4>
+                                                            <div class="row">
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="adult_community"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="adult_community"><span></span>Adult
+                                                                                Community</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="community_pool"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="community_pool"><span></span>Community
+                                                                                Pool</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="golf_community"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="golf_community"><span></span>Golf
+                                                                                Community</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input
+                                                                                id="community_fitness_room"
+                                                                                type="checkbox"
+                                                                                name="last"/>
+                                                                            <label for="community_fitness_room"><span></span>Community
+                                                                                Fitness Room</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="lake_community"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="lake_community"><span></span>Lake
+                                                                                Community</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="not_age_restricted"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="not_age_restricted"><span></span>Not
+                                                                                Age
+                                                                                Restricted</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="beach_community"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="beach_community"><span></span>Beach
+                                                                                Community</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="gated_community"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="gated_community"><span></span>Gated
+                                                                                Community</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input
+                                                                                id="planned_unit_development"
+                                                                                type="checkbox"
+                                                                                name="last"/>
+                                                                            <label for="planned_unit_development"><span></span>Planned
+                                                                                Unit Development</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input
+                                                                                id="community_playground"
+                                                                                type="checkbox"
+                                                                                name="last"/>
+                                                                            <label for="community_playground"><span></span>Community
+                                                                                Playground</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="horse_property"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="horse_property"><span></span>Horse
+                                                                                Property</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="tennis_community"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="tennis_community"><span></span>Tennis
+                                                                                Community</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <h4>Property Features</h4>
+                                                            <div class="row">
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="corner_lot"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="corner_lot"><span></span>Corner
+                                                                                Lot</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="inlaw_suite"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="inlaw_suite"><span></span>InLaw
+                                                                                Suite</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="paved_street"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="paved_street"><span></span>Paved
+                                                                                Street</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="well"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="well"><span></span>Well</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="cul-de-sac"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="cul-de-sac"><span></span>Cul-De-Sac</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="new_construction"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="new_construction"><span></span>New
+                                                                                Construction</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="sewer"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="sewer"><span></span>Sewer</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="pets_allowed"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="pets_allowed"><span></span>Pets
+                                                                                Allowed</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="handicap_access"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="handicap_access"><span></span>Handicap
+                                                                                Access</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="no_restrictions"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="no_restrictions"><span></span>No
+                                                                                Restrictions</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="septic"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="septic"><span></span>Septic</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="historic_property"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="historic_property"><span></span>Historic
+                                                                                Property</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="on_golf_course"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="on_golf_course"><span></span>On
+                                                                                Golf
+                                                                                Course</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h4>Waterfront</h4>
+                                                            <div class="row">
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="bay_front"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="bay_front"><span></span>Bay
+                                                                                Front</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="lake_front"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="lake_front"><span></span>Lake
+                                                                                Front</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="ocean_front"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="ocean_front"><span></span>Ocean
+                                                                                Front</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="waterfront"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="waterfront"><span></span>Waterfront</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <h4>View</h4>
+                                                            <div class="row">
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="bay_view"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="bay_view"><span></span>Bay
+                                                                                View</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="laggon_view"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="laggon_view"><span></span>Laggon
+                                                                                View</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-6">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span></span><input id="canyon_view"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="canyon_view"><span></span>Canyon
+                                                                                View</label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span></span><input id="lake_view"
+                                                                                                type="checkbox"
+                                                                                                name="last"/>
+                                                                            <label for="lake_view"><span></span>Lake
+                                                                                View</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 filter">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 show_less">
+                                                            <a class="less_filters">Show less filters</a>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="row">
+                                                                <div class="col-xs-9">
+                                                                    <button type="button"
+                                                                            class="btn btn-default navbar-btn load_more center-block">
+                                                                        Show results
+                                                                    </button>
+                                                                </div>
+                                                                <div class="col-xs-3 clear_search">
+                                                                    <a>Clear filters</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="shadow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                <div class="optional_search row">
+                    <div class="col-sm-10 optional">
+                        <p>Manufactured Home<span class="glyphicon glyphicon-remove"></span></p>
+                        <p>Under Contract<span class="glyphicon glyphicon-remove"></span></p>
+                        <p>Multi-Family<span class="glyphicon glyphicon-remove"></span></p>
+                        <p>Multi-Family<span class="glyphicon glyphicon-remove"></span></p>
+                        <p>Business Opportunity<span class="glyphicon glyphicon-remove"></span></p>
+                        <p class="more_optional">+2More<span class="glyphicon glyphicon-menu-down"
+                                                             aria-hidden="true"></span></p>
+                    </div>
+                    <div class="col-sm-2 clear_search text-right">
+                        <a href="#">Clear filters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sort">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="col-sm-10 sorting">
+                <p class="sort_by">Sort by:</p>
+                <p>Price<span class="glyphicon glyphicon-arrow-up"></span></p>
+                <p>$/SQFT<span class="glyphicon glyphicon-arrow-up"></span></p>
+                <p>Bedrooms<span class="glyphicon glyphicon-arrow-up"></span></p>
+                <p>Bathrooms<span class="glyphicon glyphicon-arrow-up"></span></p>
+                <p>Days on Site<span class="glyphicon glyphicon-arrow-up"></span></p>
+                <p>Year Built<span class="glyphicon glyphicon-arrow-up"></span></p>
+                <p>Lot Size<span class="glyphicon glyphicon-arrow-up"></span></p>
+            </div>
+            <div class="col-sm-2 save_search submit text-right">
+                <button type="submit" class="btn btn-default submit ">Save search</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="total">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="col-md-5">
+                <p class="found">Found 9,253 properties</p>
+            </div>
+            <div class="col-md-7">
+                <div class="row update btn-group" data-toggle="buttons">
+                    <p class="update">Updated 73 minutes ago</p>
+                    <label class="btn active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked><span
+                            class="glyphicon glyphicon-map-marker"></span>Map
+                    </label>
+                    <label class="btn">
+                        <input type="radio" name="options" id="option2" autocomplete="off"><span
+                            class="glyphicon glyphicon-th"></span>Gallery
+                    </label>
+                    <label class="btn">
+                        <input type="radio" name="options" id="option3" autocomplete="off"><span
+                            class="glyphicon glyphicon-th-list"></span>List
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="property">
+    <div class="container-fluid">
+        <div class="container property">
+            <div class="row">
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_1.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>629,000</h3>
+                            <p class="status close"></p>
+                        </div>
+                        <p class="city">Allied Gardens / San Diego</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_2.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>1,075,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Seaside Point / Imperial Beach</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>4 Beds</p>
+                            <p>3 Baths</p>
+                            <p>3,814 SF</p>
+                            <p>0.15 Acres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_3.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>500,000,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Chihuahua Valley / Warner Sorting</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>2 Beds</p>
+                            <p>2 Baths</p>
+                            <p>1.000 SF</p>
+                            <p>20.00 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_4.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>475,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">San Marcos</p>
+                        <p class="msl"><span class="msl"></span>MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_5.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>629,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale">Short Sale</p>
+                        </div>
+                        <p class="city">Allied Gardens / San Diego</p>
+                        <p class="msl"><span class="msl_2"></span>Information Copyring 2016.
+                            Multiple Listing Service of Long Island,
+                            Inc. Listing Information provided courtesy
+                            of Town And Country Real Estate</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_6.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>1,075,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Seaside Point / Imperial Beach</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>4 Beds</p>
+                            <p>3 Baths</p>
+                            <p>3,814 SF</p>
+                            <p>0.15 Acres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_7.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>500,000,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Chihuahua Valley / Warner Sorting</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>2 Beds</p>
+                            <p>2 Baths</p>
+                            <p>1.000 SF</p>
+                            <p>20.00 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_8.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>475,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">San Marcos</p>
+                        <p class="msl"><span class="msl"></span>MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_9.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>629,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Allied Gardens / San Diego</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_10.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>1,075,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Seaside Point / Imperial Beach</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>4 Beds</p>
+                            <p>3 Baths</p>
+                            <p>3,814 SF</p>
+                            <p>0.15 Acres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_11.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>500,000,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Chihuahua Valley / Warner Sorting</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>2 Beds</p>
+                            <p>2 Baths</p>
+                            <p>1.000 SF</p>
+                            <p>20.00 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_12.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>475,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">San Marcos</p>
+                        <p class="msl"><span class="msl"></span>MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_13.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>629,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Allied Gardens / San Diego</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_14.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>1,075,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Seaside Point / Imperial Beach</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>4 Beds</p>
+                            <p>3 Baths</p>
+                            <p>3,814 SF</p>
+                            <p>0.15 Acres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_15.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>500,000,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale">Short Sale</p>
+                        </div>
+                        <p class="city">Chihuahua Valley / Warner Sorting</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>2 Beds</p>
+                            <p>2 Baths</p>
+                            <p>1.000 SF</p>
+                            <p>20.00 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_16.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>475,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">San Marcos</p>
+                        <p class="msl"><span class="msl"></span>MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_17.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>629,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Allied Gardens / San Diego</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_18.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>1,075,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Seaside Point / Imperial Beach</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>4 Beds</p>
+                            <p>3 Baths</p>
+                            <p>3,814 SF</p>
+                            <p>0.15 Acres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container col-md-6">
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_19.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>500,000,000</h3>
+                            <p class="new close">New</p>
+                            <p class="open_house">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">Chihuahua Valley / Warner Sorting</p>
+                        <p class="msl">MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>2 Beds</p>
+                            <p>2 Baths</p>
+                            <p>1.000 SF</p>
+                            <p>20.00 Acres</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="view_photos">View Photos & Details</a>
+                        <img class="img-responsive" src="images/House_20.jpg" alt="house">
+                        <span class="glyphicon unfavorite"></span>
+                        <div class="price row">
+                            <h3><sup>&#36;</sup>475,000</h3>
+                            <p class="new">New</p>
+                            <p class="open_house close">Open House</p>
+                            <p class="short_sale close">Short Sale</p>
+                        </div>
+                        <p class="city">San Marcos</p>
+                        <p class="msl"><span class="msl"></span>MSL#: 160040900</p>
+                        <div class="about row">
+                            <p>3 Beds</p>
+                            <p>3 Baths</p>
+                            <p>1.525 SF</p>
+                            <p>0.17 Acres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-default navbar-btn load_more center-block">Load more homes</button>
+            <nav aria-label="Page navigation" class="numbers text-right">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<section id="menu_down">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="center-block">
+                <ul class="nav menu navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buyers</a></li>
+                    <li><a href="#">Sellers</a></li>
+                    <li><a href="#">Rentals</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contacts">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="col-sm-4">
+                <div class="our_address text-left">
+                    <h4>Our address</h4>
+                    <address>
+                        <P>Lewis & Nickles, LTD, Real Estate</P>
+                        <P>57200 East Main RD</P>
+                        <P>PO BOX 877</P>
+                        <p>Southold, NY 11971</p>
+                    </address>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h4>We are in touch</h4>
+                <P>Fax: (631)765-4096</P>
+                <P>Call: <a class="tel" href="tel:+006317653416">(631)765-3416</a></P>
+            </div>
+            <div class="col-sm-4 text-right">
+                <div class="social">
+                    <a href="#">
+                        <span class="flaticon-twitter-black-shape"></span>
+                    </a>
+                    <a href="#">
+                        <span class="flaticon-instagram-symbol"></span>
+                    </a>
+                    <a href="#">
+                        <span class="flaticon-facebook-logo"></span>
+                    </a>
+                    <a href="#">
+                        <span class="flaticon-rss-symbol"></span>
+                    </a>
+                </div>
+                <p>
+                    &#169; 2016, All rights reserved
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
