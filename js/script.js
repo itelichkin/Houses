@@ -13,15 +13,18 @@ $(document).ready(function () {
 });
 
 
-$(function () {
+var change = function () {
     $('.click_me').click(function () {
         $(this).parent().toggleClass("open");
     });
-});
+};
 
 
 $(function () {
     $(document).mouseup(function (e) {
+
+        change();
+
         var div = $(".dropdown-menu");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
@@ -31,6 +34,7 @@ $(function () {
 });
 $(function () {
     $(document).mouseup(function (e) {
+        change();
         var div = $(".little");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
@@ -40,6 +44,7 @@ $(function () {
 });
 $(function () {
     $(document).mouseup(function (e) {
+        change();
         var div = $(".big");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
