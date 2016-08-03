@@ -1,0 +1,107 @@
+@main_color_border: #e5f8fe;
+@main_color_border_background: white;
+@main_color_button: #00b3e6;
+@main_color_button_text: white;
+@color_favorite: white;
+@color_favorite_background: red;
+@main_heart_unfavorite: white;
+@main_heart_favorite: red;
+@main_hover: #e5f8fe;
+@main_hover_text: #555a5f;
+@color_icons: #9aa3aa;
+@color_icon_sort: white;
+@color_icon_sort_background: #a6afb8;
+@color_new: #00b4e5;
+@color_filter: #66d1f1;
+@color_open_house: #eab738;
+@color_short_sale: #d52a4e;
+@main_font: Open Sans, Arial, sans-serif;
+
+p, h1, h2, h3, h4, a, sup, input, button, label, option {
+  font-family: @main_font;
+}
+
+#MainMenu .favorites sup {
+  background: @color_favorite_background;
+  color: @color_favorite;
+}
+
+#logo nav {
+  background: @main_color_border_background;
+  border: 6px solid @main_color_border;
+}
+
+#logo form.navbar-form span.glyphicon, .glyphicon-remove:before, .glyphicon-menu-down:before, .navigation span.glyphicon-chevron-down, #logo li.more div span.glyphicon {
+  color: @color_icons;
+}
+
+.what p {
+  background: @main_color_button;
+}
+
+#MainMenu li a:hover, #main_menu li a:hover li, #logo .choice li input[type=radio]:checked + label, #logo div.upper li:hover {
+  background: @main_hover;
+  color: @main_hover_text;
+}
+
+.choice li:hover {
+  background: @main_hover;
+}
+
+.clear_search a {
+  border-bottom: 1px dotted @color_filter;
+  color: @color_filter;
+}
+
+#logo a.more_filters, a.less_filters {
+  border-bottom: 2px solid @color_filter;
+  color: @color_filter;
+}
+#logo div.filter button {
+  background: @main_color_button;
+  color: @main_color_button_text;
+}
+#sort div.sorting p:hover span, #sort span:hover, #sort div.sorting p:hover {
+  border-bottom: 2px solid @color_filter;
+  background: @color_filter;
+}
+#sort div.sorting p:hover {
+  background: inherit;
+}
+#sort .glyphicon {
+background: @color_icon_sort_background;
+  color:@color_icon_sort;
+}
+#sort button {
+  background: @color_open_house;
+  color: @main_color_button_text;
+}
+#total div.update label:hover, #total div.update label.active{
+  background: @main_hover;
+  color: @main_hover_text;
+  border: 2px solid @main_color_button;
+}
+.unfavorite {
+  color: @color_favorite;
+}
+.favorite {
+  color: @main_heart_favorite;
+}
+#property .new {
+  background: @color_new;
+}
+#property .open_house {
+  background: @color_open_house;
+}
+#property .short_sale {
+  background: @color_short_sale;
+}
+#property button.load_more {
+  background: @main_color_button;
+}
+#property .numbers a:hover {
+  color: @main_color_button;
+}
+#MenuDown ul li:hover a {
+  background: @main_hover;
+}

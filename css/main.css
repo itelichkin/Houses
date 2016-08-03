@@ -3,34 +3,33 @@ a, a:hover, a:focus, a:visited {
     color: inherit;
     background-color: transparent;
 }
-
 p, h1, h2, h3, h4, a, sup, input, button, label, option {
     font-family: Open Sans, Arial, sans-serif;
 }
 
-#main_menu {
+#MainMenu {
     background: #39434d;
 }
 
-#main_menu li {
+#MainMenu li {
     color: #a6afb8;
     display: inline-block;
     text-decoration: none;
 }
 
-#main_menu li a:hover, #main_menu li a:hover li {
+#MainMenu li a:hover, #MainMenu li a:hover li {
     background: #66d1f1;
     color: #555a5f;
 }
 
-#main_menu .favorites span {
+#MainMenu .favorites span {
     position: relative;
     color: #959fa8;
     top: 2px;
     left: -9px;
 }
 
-#main_menu .favorites sup {
+#MainMenu .favorites sup {
     border-radius: 10px;
     background: white;
     color: #959fa8;
@@ -71,7 +70,7 @@ div.logo p {
 
 #logo nav {
     background: white;
-    border: 5px solid #c0ecf9;
+    border: 6px solid #c0ecf9;
     border-radius: 0;
 }
 #logo .main_search div.container-fluid {
@@ -152,7 +151,7 @@ input[type="checkbox"]:checked + label span {
     left: -225px;
     border: 1px solid #e6eaed;
     padding: 10px 5px 10px 0;
-    z-index: 1;
+    z-index: 11;
     display: none;
     border-radius: inherit;
     box-shadow: none;
@@ -188,7 +187,6 @@ input[type="checkbox"]:checked + label span {
 #logo .choice li input[type=radio]:checked + label {
        background: #e5f8fe;
     color: black;
-
 }
 
 .choice li label {
@@ -216,7 +214,7 @@ input[type="checkbox"]:checked + label span {
     border-width: 1px 0 0 1px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    z-index: 2;
+    z-index: 12;
 }
 
 .upper:before {
@@ -500,14 +498,14 @@ div.optional p.more_optional {
 }
 
 #sort div.sorting p:hover span, #sort span:hover, #sort div.sorting p:hover {
-    border-bottom: 1px solid #00b5e7;
+    border-bottom: 2px solid #00b5e7;
     cursor: pointer;
     background: #00b5e7;
 }
 
 #sort div.sorting p:hover {
     background: inherit;
-    padding-bottom: 19px;
+    padding-bottom: 18px;
 }
 
 #sort div.sorting p:first-of-type:hover {
@@ -528,8 +526,8 @@ p.sort_by {
     background: #a6afb8;
     color: white;
     border-radius: 13px;
-    width: 15px;
-    padding: 2px;
+    width: 18px;
+    padding: 3px 4px;
     font-size: 10px;
 }
 
@@ -624,31 +622,26 @@ p.sort_by {
     font-weight: 700;
 }
 
-#property .col-xs-6 span.glyphicon {;
-    padding: 6px;
-    position: absolute;
-    right: 15px;
-    cursor: pointer;
-    height: 33px;
-    width: 33px;
-    top: 15px;
-}
-
 #property .close {
     display: none;
 }
-
+#property .col-xs-6 span.glyphicon {;
+    padding: 3%;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    top: 15px;
+    z-index: 10;
+}
 .unfavorite {
-    content: "";
-    background: url("../images/unfavorite.png") 50% 50% no-repeat no-repeat, rgba(0, 0, 0, 0.5);
-    background-size: 75%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 20px;
 }
 
 .favorite {
-    content: "";
-    background: url("../images/favorite.png") 50% 50% no-repeat no-repeat, rgba(0, 0, 0, 0.5);
-    background-size: 75%;
-
+    color: red;
+    font-size: 20px;
 }
 
 #property .col-md-3 span.glyphicon:before {
@@ -762,19 +755,19 @@ p.sort_by {
     padding-top: 30%;
     position: absolute;
     font-weight: 700;
-
+    z-index: 9;
 }
 
-#menu_down {
+#MenuDown {
     background: #eaebed;
 }
 
-#menu_down ul {
+#MenuDown ul {
     color: #38424c;
     font-weight: 700;
 }
 
-#menu_down div.center-block {
+#MenuDown div.center-block {
     width: 510px;
 }
 
@@ -908,7 +901,7 @@ p.sort_by {
 }
 
 @media screen and (max-width: 991px) {
-    #main_menu .navbar-nav, #main_menu .navbar-nav li {
+    #MainMenu .navbar-nav, #MainMenu .navbar-nav li {
         float: none;
         text-align: center;
     }
@@ -1011,12 +1004,4 @@ p.sort_by {
     #property button.load_more {
         top: 0;
     }
-
-    #property .col-xs-6 span.glyphicon {
-        height: 40px;
-        width: 40px;
-        padding: 15px;
-    }
-
 }
-
